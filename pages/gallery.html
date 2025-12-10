@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Gallery</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body style="font-size: 22px; text-align: center;"> 
 
-    <h1 style="font-size: 32px;">Gallery</h1>
-<div style="display: flex; flex-wrap: wrap; gap: 15px; width: 100%;">
-    <img src="../photo/Sosed.jpg" width="450">
-    <img src="../photo/Hakatory.jpg" width="450">
-    <img src="../photo/Feyerist.jpg" width="450">
+<body id="gallery-page">
 
-    <img src="../photo/extanz.jpg" width="700">
-    <img src="../photo/ALREIN.jpg" width="700">
-<br>
+<h1 id="gallery-title">Gallery</h1>
 
-   <button onclick="window.location.href='../index.html'" style="font-size: 13px; padding: 10px 20px;">
-        Home
+<div class="gallery-container" id="gallery-container">
 
+    <div class="photo-block" id="photo-sosed">
+        <img src="../photo/Sosed.jpg" class="gallery-photo" alt="Sosed">
+        <a href="#" class="photo-link">Sosed</a>
+    </div>
+
+    <div class="photo-block" id="photo-hakatory">
+        <img src="../photo/Hakatory.jpg" class="gallery-photo" alt="Hakatory">
+        <a href="#" class="photo-link">Hakatory</a>
+    </div>
+
+    <div class="photo-block" id="photo-feyerist">
+        <img src="../photo/Feyerist.jpg" class="gallery-photo" alt="Feyerist">
+        <a href="#" class="photo-link">Feyerist</a>
+    </div>
+
+    <div class="photo-block" id="photo-extanz">
+        <img src="../photo/extanz.jpg" class="gallery-photo" alt="Extanz">
+        <a href="#" class="photo-link">Extanz</a>
+    </div>
+
+    <div class="photo-block" id="photo-alrein">
+        <img src="../photo/ALREIN.jpg" class="gallery-photo" alt="ALREIN">
+        <a href="#" class="photo-link">ALREIN</a>
+    </div>
+
+</div>
+
+<button id="home-btn" onclick="window.location.href='../index.html'">Home</button>
 
 </body>
 </html>
+
+
+
+
+
