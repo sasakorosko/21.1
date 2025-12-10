@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Contacts</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Стиль -->
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body style="font-size: 22px;"> 
 
-<h1 style="font-size: 32px; text-align: center;">
-    Contacts NAVI PUBG
-</h1>
-    <p>E-mail: info@navi.gg</p>
-    <p>Official website: https://navi.gg</p>
-    <p>Social networks: NAVI PUBG Instagram / Twitter / Telegram</p>
+<body id="contacts-page">
 
-    <button onclick="window.location.href='../index.html'" style="font-size: 13px; padding: 10px 20px;">
-        Home  
+    <h1 id="contacts-title" class="title-center">
+        Contacts NAVI PUBG
+    </h1>
+
+    <!-- EMAIL -->
+    <p id="email-block" class="contact-item">
+        <i class="fas fa-envelope contact-icon"></i>
+        E-mail: 
+        <a id="email-link" href="mailto:info@navi.gg">info@navi.gg</a>
+    </p>
+
+    <!-- OFFICIAL WEBSITE -->
+    <p id="website-block" class="contact-item">
+        <i class="fas fa-globe contact-icon"></i>
+        Official website:
+        <a id="website-link" href="https://navi.gg" target="_blank">https://navi.gg</a>
+    </p>
+
+    <!-- SOCIAL NETWORKS -->
+    <p id="social-block" class="contact-item">
+        <i class="fas fa-users contact-icon"></i>
+        Social networks:
+        <a class="social-link" href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a> /
+        <a class="social-link" href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+        </a> /
+        <a class="social-link" href="https://telegram.me" target="_blank">
+            <i class="fab fa-telegram"></i> Telegram
+        </a>
+    </p>
+
+    <button id="btn-home" onclick="window.location.href='../index.html'">
+        Home
+    </button>
 
 </body>
 </html>
+
+
+
